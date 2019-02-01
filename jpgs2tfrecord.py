@@ -28,7 +28,7 @@ def _bytes_feature(value):
 
 
 def _float_feature(value):
-    return tf.train.Feature(float_list=tf.train.FloatList(value=value))
+    return tf.train.Feature(float_list=tf.train.FloatList(value=[value]))
 
 
 def mp4_to_jpgs(image_path, mp4_filenames, fps):
